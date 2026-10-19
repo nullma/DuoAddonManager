@@ -1,0 +1,36 @@
+## Interface: 120105, 120100, 120000
+## Title: |cff0091edDuo|r 插件管理 (DuoAddonManager)
+## Title-zhCN: |cff0091edDuo|r 插件管理
+## Title-enUS: |cff0091edDuo|r Addon Manager
+## Notes: 现代化高颜值插件管理器，支持分类管理、内存监控与方案预设。(/am 或 /addons 呼出)
+## Notes-zhCN: 现代化高颜值插件管理器，支持分类管理、内存监控与方案预设。(/am 或 /addons 呼出)
+## Notes-enUS: Modern sleek addon manager with categories, memory monitor and profiles. (/am or /addons)
+## Author: Duo
+## Version: 1.0.3
+## SavedVariables: DuoAddonManagerDB, DuoUI_AddonManagerDB
+## IconTexture: Interface\Icons\INV_Misc_Gear_01
+## AddonCompartmentFunc: DuoAddonManagerCompartmentFunc
+## Category-zhCN: 用户界面
+## Category-enUS: User Interface
+## X-Curse-Project-ID: 1702351
+
+# 核心初始化与兼容层
+Core\Init.lua
+Core\Locale.lua
+Core\Compatibility.lua
+Core\Database.lua
+
+# 引擎层 (主题、Curse分类、插件数据扫描)
+Engine\Theming.lua
+Engine\Categories.lua
+Engine\Scanner.lua
+
+# 界面呈现层 (控件库与主视窗)
+UI\Widgets.lua
+UI\MainWindow.lua
+
+# 扩展模块 (小地图悬浮坞与按钮)
+Modules\Minimap.lua
+
+# 插件主入口与命令行系统
+Main.lua

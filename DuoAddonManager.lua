@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+--  DuoAddonManager.lua (已重构升级为企业级模块化架构)
+--
+--  代码已被系统化拆分到各子目录，由 DuoAddonManager.toc 依次加载：
+--    - Core/Init.lua             (私有命名空间、底层工具函数)
+--    - Core/Compatibility.lua    (11.0+ 跨版本 API 适配、角色级插件启停)
+--    - Core/Database.lua         (SavedVariables 持久化、方案预设管理)
+--    - Engine/Theming.lua        (4 款暗黑主题色系统、EllesmereUI 回调挂钩)
+--    - Engine/Categories.lua     (CurseForge 标准 10 大分类映射)
+--    - Engine/Scanner.lua        (插件扫描器、父子模块聚合、内存监控)
+--    - UI/Widgets.lua            (复选框、毛玻璃按钮、下拉菜单控件)
+--    - UI/MainWindow.lua         (独立 960x650 主窗口、固定侧边栏、卡片渲染)
+--    - Modules/Minimap.lua       (小地图精细按钮与极简图标坞)
+--    - Main.lua                  (命令行系统 /am /rl、系统级插件菜单入口)
+-------------------------------------------------------------------------------
